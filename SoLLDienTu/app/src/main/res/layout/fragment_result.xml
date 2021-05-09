@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ResultFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="4dp"
+            android:text="Kết quả"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:gravity="center_vertical"
+            android:paddingLeft="65dp"
+            android:background="#fff" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chọn học kỳ:"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/sp_Ky"
+                    android:background="@drawable/corner_lv_ct_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Điểm TBC học tập : "
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_TBCHocTap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="... "
+                android:textColor="#F44336"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Xếp loại học tập : "
+                android:textColor="@color/black" />
+
+            <TextView
+                android:textSize="20sp"
+                android:id="@+id/txt_XLHocTap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="... "
+                android:textColor="#F44336" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvMHKQ"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</FrameLayout>
